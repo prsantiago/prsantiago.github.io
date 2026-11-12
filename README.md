@@ -78,9 +78,16 @@ npm run build
 
 ## 🚀 GitHub Pages Deployment
 
-This repository includes a ready-to-run GitHub Actions workflow in `.github/workflows/deploy.yml`.
+### Option A: Interactive Setup Wizard (Recommended)
+Run the built-in terminal wizard. It creates your GitHub repository, links the remote, pushes your code, opens the Pages settings, and checks the live build:
 
-### Enable GitHub Pages in 2 Clicks:
+```bash
+./scripts/setup-github-pages.sh
+```
+
+---
+
+### Option B: Manual Setup
 1. Push this repository to GitHub:
    ```bash
    git add .
