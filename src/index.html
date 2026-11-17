@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRSantiago — AI & Data Systems Integration</title>
-  <meta name="description" content="Personal brand, open-source work, technical writing, and consulting by PRSantiago. Helping businesses integrate AI and Data systems into their workplace.">
+  <title>{{BRAND_NAME}} — AI & Data Systems Integration</title>
+  <meta name="description" content="Personal brand, open-source work, technical writing, and consulting by {{BRAND_NAME}}. Helping businesses integrate AI and Data systems into their workplace.">
   
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="PRSantiago — AI & Data Systems Integration">
+  <meta property="og:title" content="{{BRAND_NAME}} — AI & Data Systems Integration">
   <meta property="og:description" content="Helping businesses integrate AI and Data systems into their workplace. Architecture, open source, and consulting.">
   
   <!-- Stylesheet -->
@@ -36,7 +36,7 @@
   <header class="border-b border-paper-200/80 bg-paper-50/90 backdrop-blur-md sticky top-0 z-40 transition-all">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
       <a href="./index.html" class="group flex items-baseline gap-2">
-        <span class="font-serif text-2xl font-medium tracking-tight text-ink-900 group-hover:text-accent transition">PRSantiago</span>
+        <span class="font-serif text-2xl font-medium tracking-tight text-ink-900 group-hover:text-accent transition">{{BRAND_NAME}}</span>
         <span class="text-xs font-mono text-ink-500 uppercase tracking-widest hidden sm:inline">/ Monograph</span>
       </a>
 
@@ -74,11 +74,11 @@
       <div class="pt-4 flex flex-wrap items-center gap-3">
         <!-- WhatsApp Direct -->
         <a 
-          href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%20Santiago,%20I'm%20interested%20in%20discussing%20an%20AI%20and%20Data%20integration%20project." 
+          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I'm%20interested%20in%20discussing%20an%20AI%20and%20Data%20integration%20project." 
           target="_blank" 
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#20ba59] font-medium text-sm transition shadow-sm"
-          title="Start a WhatsApp Chat with Santiago"
+          title="Start a WhatsApp Chat with {{OWNER_NAME}}"
         >
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.53-.49-5.006-1.343l-5.994 1.565 1.593-5.83c-.93-1.528-1.462-3.325-1.462-5.26 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
@@ -88,9 +88,9 @@
 
         <!-- Email Direct -->
         <a 
-          href="mailto:prsantiago96@gmail.com?subject=Inquiry:%20AI%20&%20Data%20Integration%20Project&body=Hi%20Santiago,%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20involving%20AI%20and%20Data%20systems%20integration%20for%20our%20team.%0D%0A%0D%0ABest%20regards," 
+          href="mailto:{{EMAIL}}?subject=Inquiry:%20AI%20&%20Data%20Integration%20Project&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20involving%20AI%20and%20Data%20systems%20integration%20for%20our%20team.%0D%0A%0D%0ABest%20regards," 
           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-ink-900 text-paper-50 hover:bg-ink-800 font-medium text-sm transition shadow-sm"
-          title="Send Email to Santiago"
+          title="Send Email to {{OWNER_NAME}}"
         >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -100,7 +100,7 @@
 
         <!-- LinkedIn Profile -->
         <a 
-          href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" 
+          href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}" 
           target="_blank" 
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg border border-paper-300 bg-white hover:border-ink-700 text-ink-800 font-medium text-sm transition"
@@ -114,7 +114,7 @@
 
         <!-- GitHub Profile -->
         <a 
-          href="https://github.com/prsantiago" 
+          href="https://github.com/{{GH_USERNAME}}" 
           target="_blank" 
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg border border-paper-300 bg-white hover:border-ink-700 text-ink-800 font-medium text-sm transition"
@@ -246,7 +246,7 @@
             <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">Go / Rust</span>
             <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">Qdrant / Milvus</span>
             <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">CLI Tooling</span>
-            <a href="https://github.com/prsantiago" target="_blank" rel="noopener noreferrer" class="ml-auto text-xs font-mono text-accent hover:underline">GitHub Repository &rarr;</a>
+            <a href="https://github.com/{{GH_USERNAME}}" target="_blank" rel="noopener noreferrer" class="ml-auto text-xs font-mono text-accent hover:underline">GitHub Repository &rarr;</a>
           </div>
         </div>
       </div>
@@ -318,7 +318,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
         <!-- WhatsApp Contact Box -->
         <a 
-          href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%20Santiago,%20I'd%20like%20to%20discuss%20an%20AI/Data%20project%20for%20my%20business." 
+          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I'd%20like%20to%20discuss%20an%20AI/Data%20project%20for%20my%20business." 
           target="_blank" 
           rel="noopener noreferrer"
           class="p-4 rounded-xl border border-paper-200 hover:border-[#25D366] hover:bg-emerald-50/20 transition flex items-start gap-4 group"
@@ -338,7 +338,7 @@
 
         <!-- Email Contact Box -->
         <a 
-          href="mailto:prsantiago96@gmail.com?subject=Inquiry:%20AI%20&%20Data%20Integration%20Project&body=Hi%20Santiago,%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20involving%20AI%20and%20Data%20systems%20integration%20for%20our%20team.%0D%0A%0D%0ABest%20regards,"
+          href="mailto:{{EMAIL}}?subject=Inquiry:%20AI%20&%20Data%20Integration%20Project&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20involving%20AI%20and%20Data%20systems%20integration%20for%20our%20team.%0D%0A%0D%0ABest%20regards,"
           class="p-4 rounded-xl border border-paper-200 hover:border-ink-700 hover:bg-paper-100/40 transition flex items-start gap-4 group"
         >
           <div class="w-10 h-10 rounded-lg bg-ink-900/5 text-ink-900 flex items-center justify-center shrink-0">
@@ -350,7 +350,7 @@
             <div class="font-serif text-base font-medium text-ink-900 group-hover:text-accent transition">
               Direct Email
             </div>
-            <div class="text-xs text-ink-500 font-mono mt-0.5">prsantiago96@gmail.com</div>
+            <div class="text-xs text-ink-500 font-mono mt-0.5">{{EMAIL}}</div>
           </div>
         </a>
       </div>
@@ -358,8 +358,8 @@
       <div class="pt-4 border-t border-paper-200 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-ink-500">
         <div>Location / Remote: Available Globally &bull; CET / UTC+1</div>
         <div class="flex items-center gap-4">
-          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">LinkedIn Profile</a>
-          <a href="https://github.com/prsantiago" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">GitHub Profile</a>
+          <a href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">LinkedIn Profile</a>
+          <a href="https://github.com/{{GH_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">GitHub Profile</a>
         </div>
       </div>
     </section>
@@ -370,7 +370,7 @@
   <footer class="border-t border-paper-200/80 bg-paper-100/40 py-8 px-4 sm:px-6 text-xs text-ink-500 font-mono">
     <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>
-        &copy; 2026 PRSantiago. Handcrafted with static HTML &amp; Tailwind CSS.
+        &copy; 2026 {{BRAND_NAME}}. Handcrafted with static HTML &amp; Tailwind CSS.
       </div>
       <div class="flex items-center gap-6">
         <a href="#top" class="hover:text-ink-900 transition">Back to top &uarr;</a>

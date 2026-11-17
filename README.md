@@ -10,69 +10,71 @@ Engineered with static HTML5 and Tailwind CSS, ready for zero-latency deployment
 
 ```
 .
-├── index.html                  # Main landing page (Overview, Services, Featured Works, Contact)
-├── projects/
-│   └── index.html              # Dedicated projects archive with structured case study skeletons
-├── writing/
-│   └── index.html              # Dedicated technical writing archive with essay skeletons
-├── assets/
-│   └── css/
-│       └── style.css           # Pre-compiled, minified production CSS (tracked in Git)
+├── .env.example                # Template for personal contact & brand variables
 ├── src/
+│   ├── index.html              # Main landing page template (Overview, Services, Featured Works, Contact)
+│   ├── projects/
+│   │   └── index.html          # Projects archive template
+│   ├── writing/
+│   │   └── index.html          # Technical writing archive template
 │   └── input.css               # Tailwind source file & Google Fonts import (Newsreader + Inter)
+├── scripts/
+│   └── build.js                # Build script: injects .env into src/ -> dist/ and compiles Tailwind CSS
+├── dist/                       # Generated static site (gitignored)
 ├── tailwind.config.js          # Tailwind configuration & editorial color palette
-├── package.json                # Build scripts (Tailwind CLI)
+├── package.json                # Build scripts (Node + Tailwind CLI)
 └── .github/
     └── workflows/
-        └── deploy.yml          # Automated GitHub Actions workflow to build and deploy to GitHub Pages
+        └── deploy.yml          # Automated GitHub Actions workflow to build and deploy dist/ to GitHub Pages
 ```
 
 ---
 
 ## ✏️ Customization Quickstart
 
-All content is clean, semantic static HTML. You can edit the text directly in any code editor (or right in GitHub’s web editor):
+### 1. Configure Personal Information (`.env`)
+Copy `.env.example` to `.env` (gitignored) and fill in your details:
 
-### 1. Update Contact Information (`index.html`)
-Open `index.html` and search for:
-* **WhatsApp**: Replace `YOUR_PHONE_NUMBER` with your phone number including country code (e.g., `34612345678` with no `+` or spaces):
-  ```html
-  href="https://wa.me/34612345678?text=Hi%20Santiago..."
-  ```
-* **LinkedIn**: Replace `YOUR_LINKEDIN_USERNAME` with your handle (e.g. `prsantiago`):
-  ```html
-  href="https://www.linkedin.com/in/prsantiago"
-  ```
-* **Email**: Pre-configured with `prsantiago96@gmail.com`. You can change this or customize the pre-filled subject and body.
+```bash
+cp .env.example .env
+```
 
-### 2. Add or Edit Projects (`projects/index.html`)
+Keys:
+* `OWNER_NAME`: Your display/first name used in greetings and tooltips
+* `BRAND_NAME`: Brand name shown in the header, page titles, and footer
+* `EMAIL`: Your contact email address
+* `WHATSAPP_PHONE`: Your phone number including country code (e.g., `34612345678` with no `+` or spaces)
+* `LINKEDIN_USERNAME`: Your LinkedIn handle
+* `GH_USERNAME`: Your GitHub username
+
+For GitHub Pages deployments, add these same 6 keys in your repository **Settings** → **Secrets and variables** → **Actions** → **Variables**.
+
+### 2. Add or Edit Projects (`src/projects/index.html`)
 The projects page includes pre-structured case studies and an empty template slot (`#project-3`) with:
 * `Challenge / Problem`
 * `Technical Architecture`
 * `Key Outcomes & Metrics`
 * `Tech Stack tags`
 
-### 3. Add or Edit Essays (`writing/index.html`)
+### 3. Add or Edit Essays (`src/writing/index.html`)
 The writing page provides pre-formatted technical notes and an empty article template (`#essay-3`) ready for your insights, reading time, and bullet-point takeaways.
 
 ---
 
 ## 🛠️ Local Development
 
-If you want to modify styles or add new Tailwind classes locally:
-
 ```bash
 # 1. Install dependencies (Tailwind CLI)
 npm install
 
-# 2. Start watcher (automatically recompiles assets/css/style.css on file save)
-npm run dev
-
-# 3. Compile for production
+# 2. Build the site (injects .env + compiles Tailwind CSS into dist/)
 npm run build
+
+# 3. Optional: watch CSS changes into dist/assets/css/style.css
+npm run dev
 ```
 
-> **Note**: You don't even need Node.js installed to preview the site! Because `assets/css/style.css` is already compiled and included, you can simply double-click `index.html` or use any basic static server (like `python3 -m http.server`).
+Preview the generated site by serving `dist/` (for example, `python3 -m http.server -d dist`).
 
 ---
 
