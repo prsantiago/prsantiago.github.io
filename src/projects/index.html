@@ -3,232 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects & Architecture — {{BRAND_NAME}}</title>
-  <meta name="description" content="Technical case studies, open source tools, and custom application builds by {{BRAND_NAME}}.">
-  
+  <title>Projects | {{BRAND_NAME}}</title>
+  <meta name="description" content="Selected software, data pipeline, and AI integration work by {{BRAND_NAME}}.">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../assets/css/style.css">
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2222%22 font-size=%2222%22>⚡</text></svg>">
-</head>
-<body class="bg-paper-50 text-ink-900 font-sans selection:bg-accent-light selection:text-ink-900 min-h-screen flex flex-col antialiased">
 
-  <!-- Main Navigation -->
-  <header class="border-b border-paper-200/80 bg-paper-50/90 backdrop-blur-md sticky top-0 z-40 transition-all">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
-      <a href="../index.html" class="group flex items-baseline gap-2">
-        <span class="font-serif text-2xl font-medium tracking-tight text-ink-900 group-hover:text-accent transition">{{BRAND_NAME}}</span>
-        <span class="text-xs font-mono text-ink-500 uppercase tracking-widest hidden sm:inline">/ Projects</span>
+  <!-- Geometric Monogram Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2316181D'/><rect x='6' y='8' width='12' height='3' fill='%23F7F7F3'/><rect x='6' y='14' width='20' height='3' fill='%23F7F7F3'/><rect x='6' y='20' width='15' height='3' fill='%231D4ED8'/></svg>">
+</head>
+<body id="top" class="bg-canvas text-ink font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="border-b border-rule bg-canvas/95 backdrop-blur-sm sticky top-0 z-40">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3 sm:gap-4">
+      <a href="../index.html" class="flex items-center gap-2 sm:gap-2.5 text-ink hover:text-accent transition-colors shrink-0">
+        <svg class="w-5 h-5 shrink-0" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="4" fill="#16181D"/>
+          <rect x="6" y="8" width="12" height="3" fill="#F7F7F3"/>
+          <rect x="6" y="14" width="20" height="3" fill="#F7F7F3"/>
+          <rect x="6" y="20" width="15" height="3" fill="#1D4ED8"/>
+        </svg>
+        <span class="font-semibold tracking-tight text-sm sm:text-base">{{BRAND_NAME}}</span>
       </a>
 
-      <nav class="flex items-center gap-6 sm:gap-8 text-sm font-medium text-ink-700">
-        <a href="../index.html" class="hover:text-accent transition">Overview</a>
-        <a href="../projects/index.html" class="text-ink-900 font-semibold border-b border-ink-900 pb-0.5">Projects</a>
-        <a href="../writing/index.html" class="hover:text-accent transition">Writing</a>
-        <a href="../index.html#contact" class="px-3.5 py-1.5 rounded-full border border-ink-800 text-xs font-mono tracking-tight text-ink-900 hover:bg-ink-900 hover:text-paper-50 transition">
+      <nav class="flex items-center gap-3.5 sm:gap-7 text-xs sm:text-sm text-ink-muted whitespace-nowrap">
+        <a href="../index.html" class="hover:text-ink transition-colors">Home</a>
+        <a href="../projects/index.html" class="text-ink font-semibold underline decoration-accent decoration-2 underline-offset-8">Projects</a>
+        <a href="../writing/index.html" class="hover:text-ink transition-colors">Writing</a>
+        <a href="../index.html#contact" class="px-2.5 sm:px-3 py-1 sm:py-1.5 border border-ink text-xs font-medium text-ink hover:bg-ink hover:text-surface transition-colors">
           Contact
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Container -->
-  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full space-y-16">
+  <!-- Main -->
+  <main class="flex-grow max-w-3xl mx-auto px-5 sm:px-6 py-12 sm:py-20 w-full space-y-12">
 
-    <!-- Header Section -->
-    <section class="space-y-4">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-paper-100 border border-paper-200 text-xs font-mono text-ink-600">
-        <span>Curated Works</span>
-        <span class="text-paper-300">&bull;</span>
-        <span>Case Studies & Open Source</span>
-      </div>
-
-      <h1 class="font-serif text-4xl sm:text-5xl font-normal tracking-tight text-ink-900">
-        Systems, Architectures &amp; Applications
+    <section class="space-y-4 border-b border-rule pb-8">
+      <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight text-ink">
+        Projects
       </h1>
-
-      <p class="text-lg text-ink-600 leading-relaxed max-w-2xl">
-        A selection of technical implementations, open-source repositories, and enterprise AI & data architectures. Each project highlights the business challenge, system design, and tangible operational impact.
+      <p class="text-base text-ink-muted leading-relaxed max-w-2xl">
+        Public write-ups of client systems and open-source tools will live here.
       </p>
     </section>
 
-    <hr class="border-t border-paper-200">
-
-    <!-- Case Studies & Project Skeletons List -->
-    <div class="space-y-12">
-
-      <!-- Case Study Skeleton 1 -->
-      <article id="project-1" class="p-6 sm:p-8 rounded-2xl border border-paper-200 bg-white shadow-sm space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-paper-100 pb-4">
-          <div>
-            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-accent">[Enterprise Case Study]</span>
-            <h2 class="font-serif text-2xl sm:text-3xl font-medium text-ink-900 mt-1">
-              Autonomous Customer Support & Operations Knowledge Agent
-            </h2>
-          </div>
-          <div class="text-xs font-mono text-ink-500 sm:text-right shrink-0">
-            <span>Production Deployment</span> &middot; <span>2026</span>
-          </div>
-        </div>
-
-        <!-- Skeleton Content: Problem / Solution / Impact -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">01. Challenge</h3>
-            <p class="text-ink-600 leading-relaxed">
-              Customer operations were bogged down by manual triage across 50,000+ unstructured product and logistics documents, causing high response latency and error-prone escalation.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">02. Architecture</h3>
-            <p class="text-ink-600 leading-relaxed">
-              Engineered a deterministic state-machine agent with hybrid vector search (dense embeddings + BM25) and sandboxed tool-calling to safely interface with core internal ERP APIs.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">03. Key Outcomes</h3>
-            <ul class="text-ink-600 space-y-1 text-xs font-mono">
-              <li>&bull; 40% drop in escalation tickets</li>
-              <li>&bull; Under 450ms semantic search p95</li>
-              <li>&bull; 100% auditable execution traces</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Tech Stack & Links -->
-        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-paper-100 text-xs font-mono">
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">Python</span>
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">LangGraph / Agents</span>
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">pgvector / PostgreSQL</span>
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">FastAPI</span>
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">Docker</span>
-          </div>
-          <a href="../index.html#contact" class="text-accent hover:underline font-medium">Discuss Similar Integration &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Case Study Skeleton 2: Open Source Tool -->
-      <article id="project-2" class="p-6 sm:p-8 rounded-2xl border border-paper-200 bg-white shadow-sm space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-paper-100 pb-4">
-          <div>
-            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-ink-500">[Open Source Software]</span>
-            <h2 class="font-serif text-2xl sm:text-3xl font-medium text-ink-900 mt-1">
-              Local-First Vector ETL & Document Chunking Engine
-            </h2>
-          </div>
-          <div class="text-xs font-mono text-ink-500 sm:text-right shrink-0">
-            <span>Public Repository</span> &middot; <span>Open Source</span>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">01. Purpose</h3>
-            <p class="text-ink-600 leading-relaxed">
-              Provides engineers with a zero-telemetry, memory-efficient pipeline for parsing complex PDFs, markdown files, and data tables into semantically coherent embedding chunks.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">02. Design Highlights</h3>
-            <p class="text-ink-600 leading-relaxed">
-              Streaming file parser with heuristic table recognition, content deduplication via MinHash, and pluggable connector support for Qdrant, Milvus, and ChromaDB.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">03. Performance</h3>
-            <ul class="text-ink-600 space-y-1 text-xs font-mono">
-              <li>&bull; 10x faster parsing than standard Python scripts</li>
-              <li>&bull; Zero external API dependencies required</li>
-              <li>&bull; Clean CLI and Go / Python bindings</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-paper-100 text-xs font-mono">
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">Go</span>
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">Vector Embeddings</span>
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">Qdrant</span>
-            <span class="px-2.5 py-1 rounded bg-paper-100 text-ink-800">CLI Tool</span>
-          </div>
-          <a href="https://github.com/{{GH_USERNAME}}" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline font-medium">View Source on GitHub &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Case Study Skeleton 3: Editable Template Slot -->
-      <article id="project-3" class="p-6 sm:p-8 rounded-2xl border-2 border-dashed border-paper-300 bg-paper-50/50 space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-paper-200 pb-4">
-          <div>
-            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-ink-400">[Template Slot &bull; Add Your Project Here]</span>
-            <h2 class="font-serif text-2xl sm:text-3xl font-medium text-ink-800 mt-1">
-              [Project Title: Custom Data Pipeline or Web Application]
-            </h2>
-          </div>
-          <div class="text-xs font-mono text-ink-400 sm:text-right shrink-0">
-            <span>[Status / Year]</span>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">01. Problem Statement</h3>
-            <p class="text-ink-600 leading-relaxed">
-              [Describe the business context, bottlenecks, or requirements your project addressed.]
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">02. Technical Implementation</h3>
-            <p class="text-ink-600 leading-relaxed">
-              [Detail the architecture, data models, frameworks, and system constraints involved.]
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-ink-700">03. Measurable Impact</h3>
-            <ul class="text-ink-600 space-y-1 text-xs font-mono">
-              <li>&bull; [Metric 1: Speed, revenue, efficiency gain]</li>
-              <li>&bull; [Metric 2: Reliability, uptime, user adoption]</li>
-              <li>&bull; [Metric 3: Scale or data volume processed]</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-paper-200 text-xs font-mono">
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded bg-paper-200/60 text-ink-700">[Stack Tag 1]</span>
-            <span class="px-2.5 py-1 rounded bg-paper-200/60 text-ink-700">[Stack Tag 2]</span>
-            <span class="px-2.5 py-1 rounded bg-paper-200/60 text-ink-700">[Stack Tag 3]</span>
-          </div>
-          <span class="text-ink-400 italic">[Drop your link or leave as case study]</span>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- Call to Action Banner -->
-    <section class="p-8 rounded-2xl border border-paper-200 bg-white text-center space-y-4">
-      <h3 class="font-serif text-2xl text-ink-900 font-medium">Interested in a Custom Build or Architecture Review?</h3>
-      <p class="text-sm text-ink-600 max-w-lg mx-auto">
-        I work with businesses to design and deploy specialized AI agents and data systems that integrate cleanly with existing infrastructures.
+    <section class="p-6 sm:p-8 bg-surface border border-rule space-y-5">
+      <h2 class="text-lg font-semibold text-ink">Case studies are being documented</h2>
+      <p class="text-sm sm:text-base text-ink-muted leading-relaxed max-w-xl">
+        Most of my recent work is private software built for small and mid-sized businesses. You can browse public code on GitHub, or message me directly if you want to see examples relevant to your industry.
       </p>
-      <div class="pt-2 flex justify-center gap-3">
-        <a href="../index.html#contact" class="px-5 py-2.5 rounded-lg bg-ink-900 text-paper-50 font-medium text-sm hover:bg-ink-800 transition">
-          Initiate an Inquiry &rarr;
+      <div class="flex flex-wrap items-center gap-3 pt-1">
+        <a
+          href="https://github.com/{{GH_USERNAME}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-4 py-2 bg-ink text-surface hover:bg-accent text-sm font-medium transition-colors"
+        >
+          Browse GitHub
+        </a>
+        <a
+          href="../index.html#contact"
+          class="px-4 py-2 border border-rule hover:border-ink text-ink text-sm font-medium transition-colors"
+        >
+          Ask for work samples
         </a>
       </div>
     </section>
 
+    <!-- TEMPLATE: Project Entry (uncomment and duplicate inside a <div class="divide-y divide-rule border-b border-rule"> when adding real projects)
+    <article id="project-slug" class="py-8 space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+        <h2 class="text-xl sm:text-2xl font-semibold text-ink">Project title</h2>
+        <span class="font-mono text-xs text-ink-subtle shrink-0">2026</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        <div class="space-y-1.5">
+          <h3 class="font-semibold text-ink">Problem</h3>
+          <p class="text-ink-muted leading-relaxed">What bottleneck or manual process the business had.</p>
+        </div>
+        <div class="space-y-1.5">
+          <h3 class="font-semibold text-ink">What was built</h3>
+          <p class="text-ink-muted leading-relaxed">Plain description of the pipeline, internal tool, or integration.</p>
+        </div>
+        <div class="space-y-1.5">
+          <h3 class="font-semibold text-ink">Outcome</h3>
+          <p class="text-ink-muted leading-relaxed">Concrete result for the team.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-2 text-xs">
+        <div class="flex flex-wrap gap-2 font-mono text-ink-muted">
+          <span class="px-2 py-0.5 bg-canvas border border-rule">Stack 1</span>
+          <span class="px-2 py-0.5 bg-canvas border border-rule">Stack 2</span>
+        </div>
+        <a href="../index.html#contact" class="text-accent hover:underline font-medium">Ask about similar work</a>
+      </div>
+    </article>
+    -->
+
   </main>
 
-  <!-- Site Footer -->
-  <footer class="border-t border-paper-200/80 bg-paper-100/40 py-8 px-4 sm:px-6 text-xs text-ink-500 font-mono">
-    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        &copy; 2026 {{BRAND_NAME}}. Handcrafted with static HTML &amp; Tailwind CSS.
-      </div>
-      <div class="flex items-center gap-6">
-        <a href="#top" class="hover:text-ink-900 transition">Back to top &uarr;</a>
-      </div>
+  <!-- Footer -->
+  <footer class="border-t border-rule py-6 px-5 sm:px-6 text-xs text-ink-muted">
+    <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>&copy; 2026 {{BRAND_NAME}} &middot; MX / US &amp; Spain</div>
+      <a href="#top" class="hover:text-ink transition-colors">Back to top</a>
     </div>
   </footer>
 

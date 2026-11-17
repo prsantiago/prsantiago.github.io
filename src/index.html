@@ -3,380 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{BRAND_NAME}} — AI & Data Systems Integration</title>
-  <meta name="description" content="Personal brand, open-source work, technical writing, and consulting by {{BRAND_NAME}}. Helping businesses integrate AI and Data systems into their workplace.">
-  
-  <!-- Open Graph / Meta -->
+  <title>{{BRAND_NAME}}: Software, Data &amp; AI for Small Businesses</title>
+  <meta name="description" content="Independent software engineer with 5+ years of experience building data pipelines, internal tools, custom software, and LLM integrations for SMB founders.">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{BRAND_NAME}} — AI & Data Systems Integration">
-  <meta property="og:description" content="Helping businesses integrate AI and Data systems into their workplace. Architecture, open source, and consulting.">
-  
+  <meta property="og:title" content="{{BRAND_NAME}}: Software, Data &amp; AI for Small Businesses">
+  <meta property="og:description" content="Data pipelines, internal tools, custom software, and practical LLM integrations for small and mid-sized business founders.">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2222%22 font-size=%2222%22>⚡</text></svg>">
+
+  <!-- Geometric Monogram Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2316181D'/><rect x='6' y='8' width='12' height='3' fill='%23F7F7F3'/><rect x='6' y='14' width='20' height='3' fill='%23F7F7F3'/><rect x='6' y='20' width='15' height='3' fill='%231D4ED8'/></svg>">
 </head>
-<body class="bg-paper-50 text-ink-900 font-sans selection:bg-accent-light selection:text-ink-900 min-h-screen flex flex-col antialiased">
+<body id="top" class="bg-canvas text-ink font-sans min-h-screen flex flex-col">
 
-  <!-- Top Announcement / Status Bar -->
-  <div class="border-b border-paper-200 bg-paper-100/60 py-2.5 px-4 text-xs text-ink-600">
-    <div class="max-w-4xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-        <span class="font-mono tracking-tight">Available for select consulting & custom application builds</span>
-      </div>
-      <a href="#contact" class="hidden sm:inline-block font-mono text-ink-700 hover:text-accent underline underline-offset-4 transition">
-        Direct Inquiries &rarr;
-      </a>
-    </div>
-  </div>
-
-  <!-- Main Navigation -->
-  <header class="border-b border-paper-200/80 bg-paper-50/90 backdrop-blur-md sticky top-0 z-40 transition-all">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
-      <a href="./index.html" class="group flex items-baseline gap-2">
-        <span class="font-serif text-2xl font-medium tracking-tight text-ink-900 group-hover:text-accent transition">{{BRAND_NAME}}</span>
-        <span class="text-xs font-mono text-ink-500 uppercase tracking-widest hidden sm:inline">/ Monograph</span>
+  <!-- Header -->
+  <header class="border-b border-rule bg-canvas/95 backdrop-blur-sm sticky top-0 z-40">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3 sm:gap-4">
+      <a href="./index.html" class="flex items-center gap-2 sm:gap-2.5 text-ink hover:text-accent transition-colors shrink-0">
+        <svg class="w-5 h-5 shrink-0" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="4" fill="#16181D"/>
+          <rect x="6" y="8" width="12" height="3" fill="#F7F7F3"/>
+          <rect x="6" y="14" width="20" height="3" fill="#F7F7F3"/>
+          <rect x="6" y="20" width="15" height="3" fill="#1D4ED8"/>
+        </svg>
+        <span class="font-semibold tracking-tight text-sm sm:text-base">{{BRAND_NAME}}</span>
       </a>
 
-      <nav class="flex items-center gap-6 sm:gap-8 text-sm font-medium text-ink-700">
-        <a href="./index.html" class="text-ink-900 font-semibold border-b border-ink-900 pb-0.5">Overview</a>
-        <a href="./projects/index.html" class="hover:text-accent transition">Projects</a>
-        <a href="./writing/index.html" class="hover:text-accent transition">Writing</a>
-        <a href="#contact" class="px-3.5 py-1.5 rounded-full border border-ink-800 text-xs font-mono tracking-tight text-ink-900 hover:bg-ink-900 hover:text-paper-50 transition">
+      <nav class="flex items-center gap-3.5 sm:gap-7 text-xs sm:text-sm text-ink-muted whitespace-nowrap">
+        <a href="./index.html" class="text-ink font-semibold underline decoration-accent decoration-2 underline-offset-8">Home</a>
+        <a href="./projects/index.html" class="hover:text-ink transition-colors">Projects</a>
+        <a href="./writing/index.html" class="hover:text-ink transition-colors">Writing</a>
+        <a href="#contact" class="px-2.5 sm:px-3 py-1 sm:py-1.5 border border-ink text-xs font-medium text-ink hover:bg-ink hover:text-surface transition-colors">
           Contact
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content Container -->
-  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full space-y-20">
+  <!-- Main -->
+  <main class="flex-grow max-w-3xl mx-auto px-5 sm:px-6 py-12 sm:py-20 w-full space-y-16 sm:space-y-20">
 
-    <!-- Hero Section -->
-    <section class="space-y-6 pt-4">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-paper-100 border border-paper-200 text-xs font-mono text-ink-600">
-        <span class="text-accent font-semibold">Specialization</span>
-        <span class="text-paper-300">|</span>
-        <span>Applied AI & Data Architecture</span>
-      </div>
-
-      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-[1.15] tracking-tight text-ink-900">
-        Helping businesses integrate <span class="italic font-serif text-accent">AI & Data systems</span> into their workplace.
+    <!-- Hero -->
+    <section class="space-y-6">
+      <h1 class="text-3xl sm:text-5xl font-semibold tracking-tight leading-[1.12] text-ink max-w-2xl">
+        Software, data, and AI built for how your business actually works.
       </h1>
 
-      <p class="text-lg sm:text-xl text-ink-600 font-normal leading-relaxed max-w-2xl">
-        I partner with growing businesses and engineering teams to design, architect, and deliver custom intelligent systems, autonomous workflows, and reliable data backbones that drive measurable operational leverage.
-      </p>
-
-      <!-- Instant Contact Action Buttons -->
-      <div class="pt-4 flex flex-wrap items-center gap-3">
-        <!-- WhatsApp Direct -->
-        <a 
-          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I'm%20interested%20in%20discussing%20an%20AI%20and%20Data%20integration%20project." 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-[#25D366] text-white hover:bg-[#20ba59] font-medium text-sm transition shadow-sm"
-          title="Start a WhatsApp Chat with {{OWNER_NAME}}"
-        >
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.53-.49-5.006-1.343l-5.994 1.565 1.593-5.83c-.93-1.528-1.462-3.325-1.462-5.26 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
-          </svg>
-          <span>Chat on WhatsApp</span>
-        </a>
-
-        <!-- Email Direct -->
-        <a 
-          href="mailto:{{EMAIL}}?subject=Inquiry:%20AI%20&%20Data%20Integration%20Project&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20involving%20AI%20and%20Data%20systems%20integration%20for%20our%20team.%0D%0A%0D%0ABest%20regards," 
-          class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-ink-900 text-paper-50 hover:bg-ink-800 font-medium text-sm transition shadow-sm"
-          title="Send Email to {{OWNER_NAME}}"
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-          </svg>
-          <span>Email Me Directly</span>
-        </a>
-
-        <!-- LinkedIn Profile -->
-        <a 
-          href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg border border-paper-300 bg-white hover:border-ink-700 text-ink-800 font-medium text-sm transition"
-          title="View LinkedIn Profile"
-        >
-          <svg class="w-4 h-4 fill-current text-[#0A66C2]" viewBox="0 0 24 24">
-            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-          </svg>
-          <span>LinkedIn</span>
-        </a>
-
-        <!-- GitHub Profile -->
-        <a 
-          href="https://github.com/{{GH_USERNAME}}" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg border border-paper-300 bg-white hover:border-ink-700 text-ink-800 font-medium text-sm transition"
-          title="Explore GitHub Repositories"
-        >
-          <svg class="w-4 h-4 fill-current text-ink-900" viewBox="0 0 24 24">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-          </svg>
-          <span>GitHub</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Editorial Divider -->
-    <hr class="border-t border-paper-200">
-
-    <!-- Core Services / How I Help Businesses -->
-    <section class="space-y-8">
-      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-        <h2 class="font-serif text-2xl sm:text-3xl text-ink-900 font-medium">Areas of Practice & Engagement</h2>
-        <span class="text-xs font-mono text-ink-500 uppercase tracking-wider">Consulting & Custom Builds</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Service Card 1 -->
-        <div class="p-6 rounded-xl border border-paper-200 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-3">
-          <div class="w-8 h-8 rounded-lg bg-paper-100 flex items-center justify-center text-accent font-mono text-sm font-semibold">
-            01
-          </div>
-          <h3 class="font-serif text-xl text-ink-900 font-medium">Applied AI Integration</h3>
-          <p class="text-sm text-ink-600 leading-relaxed">
-            Embedding custom LLM pipelines, autonomous agents, and RAG architectures directly into your company’s internal operations, knowledge base, and customer software.
-          </p>
-          <ul class="text-xs font-mono text-ink-500 space-y-1.5 pt-2 border-t border-paper-100">
-            <li>• Agentic Workflows & Automation</li>
-            <li>• Private / On-Premise LLMs</li>
-            <li>• Retrieval-Augmented Generation</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 2 -->
-        <div class="p-6 rounded-xl border border-paper-200 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-3">
-          <div class="w-8 h-8 rounded-lg bg-paper-100 flex items-center justify-center text-accent font-mono text-sm font-semibold">
-            02
-          </div>
-          <h3 class="font-serif text-xl text-ink-900 font-medium">Data Systems & Pipelines</h3>
-          <p class="text-sm text-ink-600 leading-relaxed">
-            Building robust data pipelines, lakehouse architectures, and schema models that convert unstructured enterprise data into clean, accessible data assets.
-          </p>
-          <ul class="text-xs font-mono text-ink-500 space-y-1.5 pt-2 border-t border-paper-100">
-            <li>• Vector Databases & Indexing</li>
-            <li>• ETL / Streaming Pipelines</li>
-            <li>• Data Governance & Observability</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="p-6 rounded-xl border border-paper-200 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-3">
-          <div class="w-8 h-8 rounded-lg bg-paper-100 flex items-center justify-center text-accent font-mono text-sm font-semibold">
-            03
-          </div>
-          <h3 class="font-serif text-xl text-ink-900 font-medium">Bespoke App Development</h3>
-          <p class="text-sm text-ink-600 leading-relaxed">
-            Full-cycle engineering of specialized web apps, admin tooling, and high-performance microservices tailored specifically to your company’s unique workflows.
-          </p>
-          <ul class="text-xs font-mono text-ink-500 space-y-1.5 pt-2 border-t border-paper-100">
-            <li>• Custom Business Portals</li>
-            <li>• Scalable API & Backend Microservices</li>
-            <li>• Architecture Review & Advisory</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Editorial Divider -->
-    <hr class="border-t border-paper-200">
-
-    <!-- Featured Projects & Open Source Section -->
-    <section class="space-y-6">
-      <div class="flex items-baseline justify-between">
-        <div>
-          <h2 class="font-serif text-2xl sm:text-3xl text-ink-900 font-medium">Featured Projects & Open Source</h2>
-          <p class="text-sm text-ink-500 font-serif italic pt-1">Selected systems, implementations, and open repositories.</p>
-        </div>
-        <a href="./projects/index.html" class="text-xs font-mono font-medium text-accent hover:text-accent-hover flex items-center gap-1 group">
-          View all projects <span class="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
-        </a>
-      </div>
-
-      <div class="space-y-4">
-        <!-- Project Skeleton Item 1 -->
-        <div class="p-6 rounded-xl border border-paper-200 bg-white hover:border-paper-300 transition group space-y-3">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <span class="text-xs font-mono uppercase tracking-wider text-accent font-semibold">[CASE STUDY]</span>
-              <h3 class="font-serif text-xl text-ink-900 font-medium group-hover:text-accent transition">
-                Enterprise Autonomous Knowledge & Dispatch Agent
-              </h3>
-            </div>
-            <span class="text-xs font-mono text-ink-400 shrink-0">2026</span>
-          </div>
-          <p class="text-sm text-ink-600 leading-relaxed">
-            Multi-agent architecture connecting ERP systems with an intelligent semantic query layer. Reduced customer service escalations by 40% and enabled zero-latency retrieval across 50,000 internal documents.
-          </p>
-          <div class="flex flex-wrap items-center gap-2 pt-2">
-            <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">Python</span>
-            <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">LangGraph / Agents</span>
-            <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">PostgreSQL / pgvector</span>
-            <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">FastAPI</span>
-            <a href="./projects/index.html#project-1" class="ml-auto text-xs font-mono text-accent hover:underline">Read Architecture Breakdown &rarr;</a>
-          </div>
-        </div>
-
-        <!-- Project Skeleton Item 2 -->
-        <div class="p-6 rounded-xl border border-paper-200 bg-white hover:border-paper-300 transition group space-y-3">
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <span class="text-xs font-mono uppercase tracking-wider text-ink-500 font-semibold">[OPEN SOURCE]</span>
-              <h3 class="font-serif text-xl text-ink-900 font-medium group-hover:text-accent transition">
-                Local-First Vector ETL & Embedding Orchestrator
-              </h3>
-            </div>
-            <span class="text-xs font-mono text-ink-400 shrink-0">Open Source</span>
-          </div>
-          <p class="text-sm text-ink-600 leading-relaxed">
-            Lightweight, high-throughput tool for transforming messy enterprise documents (PDFs, spreadsheets, markdown) into production-ready vector embeddings with automated deduplication and chunk validation.
-          </p>
-          <div class="flex flex-wrap items-center gap-2 pt-2">
-            <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">Go / Rust</span>
-            <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">Qdrant / Milvus</span>
-            <span class="px-2 py-0.5 rounded text-xs font-mono bg-paper-100 text-ink-700">CLI Tooling</span>
-            <a href="https://github.com/{{GH_USERNAME}}" target="_blank" rel="noopener noreferrer" class="ml-auto text-xs font-mono text-accent hover:underline">GitHub Repository &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Editorial Divider -->
-    <hr class="border-t border-paper-200">
-
-    <!-- Selected Writing / Technical Notes -->
-    <section class="space-y-6">
-      <div class="flex items-baseline justify-between">
-        <div>
-          <h2 class="font-serif text-2xl sm:text-3xl text-ink-900 font-medium">Selected Writing & Field Notes</h2>
-          <p class="text-sm text-ink-500 font-serif italic pt-1">Essays on software engineering, applied AI, and data architecture.</p>
-        </div>
-        <a href="./writing/index.html" class="text-xs font-mono font-medium text-accent hover:text-accent-hover flex items-center gap-1 group">
-          View all writing <span class="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
-        </a>
-      </div>
-
-      <div class="divide-y divide-paper-200 border-y border-paper-200">
-        <!-- Writing Item 1 -->
-        <article class="py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 group">
-          <div class="space-y-1">
-            <a href="./writing/index.html#essay-1" class="font-serif text-lg text-ink-900 group-hover:text-accent transition font-medium">
-              Architecting Resilient Multi-Agent AI Systems for Enterprise Workflows
-            </a>
-            <p class="text-sm text-ink-600 line-clamp-1">
-              Why deterministic state machines beat unconstrained agent loops in mission-critical corporate operations.
-            </p>
-          </div>
-          <div class="text-xs font-mono text-ink-500 shrink-0 sm:text-right">
-            <span>Nov 2026</span> &middot; <span>6 min read</span>
-          </div>
-        </article>
-
-        <!-- Writing Item 2 -->
-        <article class="py-5 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 group">
-          <div class="space-y-1">
-            <a href="./writing/index.html#essay-2" class="font-serif text-lg text-ink-900 group-hover:text-accent transition font-medium">
-              The Pragmatic Guide to Embedding Models, Vector DBs, and Production Hybrid Search
-            </a>
-            <p class="text-sm text-ink-600 line-clamp-1">
-              Practical benchmarks and trade-offs between dense semantic retrieval, BM25 keyword matching, and rerankers.
-            </p>
-          </div>
-          <div class="text-xs font-mono text-ink-500 shrink-0 sm:text-right">
-            <span>Oct 2026</span> &middot; <span>8 min read</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Editorial Divider -->
-    <hr class="border-t border-paper-200">
-
-    <!-- Direct Contact & Inquiry Section -->
-    <section id="contact" class="p-8 sm:p-10 rounded-2xl border border-paper-300 bg-white shadow-sm space-y-6">
-      <div class="space-y-2">
-        <span class="text-xs font-mono uppercase tracking-widest text-accent font-semibold">Initiate a Conversation</span>
-        <h2 class="font-serif text-3xl sm:text-4xl text-ink-900 font-medium">
-          Have an AI, Data, or Custom Application Project in Mind?
-        </h2>
-        <p class="text-ink-600 text-sm sm:text-base leading-relaxed max-w-xl">
-          Whether you need a hands-on architectural consultation, an end-to-end custom application, or guidance integrating modern AI workflows into your operations, reach out directly.
+      <div class="space-y-3 text-base sm:text-lg text-ink-muted leading-relaxed max-w-2xl">
+        <p>
+          I am {{OWNER_NAME}}, an independent software engineer with over five years of experience helping small and mid-sized business founders replace manual spreadsheet work, connect scattered tools, and put practical AI to work.
+        </p>
+        <p class="text-sm sm:text-base">
+          You work directly with me from first scope to production. Available across Mexico, the US, and Spain in English and Spanish.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-        <!-- WhatsApp Contact Box -->
-        <a 
-          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I'd%20like%20to%20discuss%20an%20AI/Data%20project%20for%20my%20business." 
-          target="_blank" 
+      <div class="pt-2 flex flex-wrap items-center gap-3">
+        <a
+          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I%27d%20like%20to%20discuss%20a%20software%20or%20AI%20project%20for%20my%20business."
+          target="_blank"
           rel="noopener noreferrer"
-          class="p-4 rounded-xl border border-paper-200 hover:border-[#25D366] hover:bg-emerald-50/20 transition flex items-start gap-4 group"
+          class="inline-flex items-center gap-2 px-4 py-2.5 bg-ink text-surface hover:bg-accent text-sm font-medium transition-colors"
+          title="Message {{OWNER_NAME}} on WhatsApp"
         >
-          <div class="w-10 h-10 rounded-lg bg-[#25D366]/10 text-[#25D366] flex items-center justify-center shrink-0">
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.53-.49-5.006-1.343l-5.994 1.565 1.593-5.83c-.93-1.528-1.462-3.325-1.462-5.26 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+          </svg>
+          <span>Message on WhatsApp</span>
+        </a>
+
+        <a
+          href="mailto:{{EMAIL}}?subject=Project%20inquiry&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI%27d%20like%20to%20discuss%20a%20project%20for%20our%20business.%0D%0A%0D%0ABest,"
+          class="inline-flex items-center gap-2 px-4 py-2.5 bg-surface border border-rule hover:border-ink text-ink text-sm font-medium transition-colors"
+          title="Email {{OWNER_NAME}}"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span>Send an email</span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-3 py-2.5 text-sm text-ink-muted hover:text-accent underline underline-offset-4 transition-colors"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/{{GH_USERNAME}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-3 py-2.5 text-sm text-ink-muted hover:text-accent underline underline-offset-4 transition-colors"
+        >
+          GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- What I build (Asymmetric Spec Ledger) -->
+    <section class="space-y-6">
+      <div class="flex items-baseline justify-between border-b border-ink pb-3">
+        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-ink">What I build</h2>
+        <span class="font-mono text-xs text-ink-subtle">4 core areas</span>
+      </div>
+
+      <div class="divide-y divide-rule border-b border-rule">
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
+          <h3 class="md:col-span-4 text-base font-semibold text-ink">
+            Data pipelines
+          </h3>
+          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
+            Your sales, inventory, and accounting numbers probably live in separate exports. I build automated pipelines that pull them into one clean, reliable place so you stop reconciling spreadsheets by hand.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
+          <h3 class="md:col-span-4 text-base font-semibold text-ink">
+            Internal tools
+          </h3>
+          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
+            When a growing team runs on shared sheets and email threads, things slip. I build focused admin panels, client portals, and internal trackers shaped around your exact process.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
+          <h3 class="md:col-span-4 text-base font-semibold text-ink">
+            Custom software
+          </h3>
+          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
+            Off-the-shelf software forces you to change how you work or pay for features you never touch. I design and ship web applications built specifically for your business.
+          </p>
+        </div>
+
+        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
+          <h3 class="md:col-span-4 text-base font-semibold text-ink">
+            LLM &amp; agent integrations
+          </h3>
+          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
+            AI is useful when it is wired into your real data and tools. I integrate language models and automated workflows for document triage, internal search, and customer support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work & Timezones -->
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+      <div class="md:col-span-4 space-y-2">
+        <h2 class="text-xl font-semibold tracking-tight text-ink">Working together</h2>
+        <p class="text-sm text-ink-muted">
+          5+ years in software development. Direct engineering with no middlemen.
+        </p>
+      </div>
+
+      <div class="md:col-span-8 space-y-5">
+        <p class="text-sm sm:text-base text-ink-muted leading-relaxed">
+          You do not need to speak in technical jargon to start a project. Tell me what bottleneck is slowing your team down, and I will map out a realistic scope, timeline, and budget in plain language before writing code.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+          <div class="p-4 bg-surface border border-rule space-y-1">
+            <div class="text-xs font-medium text-ink">Americas hours</div>
+            <div class="font-mono text-xs text-ink-muted" id="tz-americas">Mexico &amp; US (CST / EST)</div>
+          </div>
+          <div class="p-4 bg-surface border border-rule space-y-1">
+            <div class="text-xs font-medium text-ink">Europe hours</div>
+            <div class="font-mono text-xs text-ink-muted" id="tz-europe">Spain (CET / CEST)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-6 sm:p-8 bg-surface border border-rule space-y-6">
+      <div class="space-y-2 max-w-xl">
+        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-ink">
+          Start a conversation
+        </h2>
+        <p class="text-sm sm:text-base text-ink-muted leading-relaxed">
+          Send a quick note about what you are trying to fix or build. I reply personally, usually the same business day.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a
+          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I%27d%20like%20to%20discuss%20a%20project%20for%20my%20business."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="p-4 border border-rule hover:border-accent transition-colors flex items-start gap-3.5 group"
+        >
+          <div class="w-9 h-9 bg-canvas border border-rule text-ink group-hover:text-accent flex items-center justify-center shrink-0 transition-colors">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.53-.49-5.006-1.343l-5.994 1.565 1.593-5.83c-.93-1.528-1.462-3.325-1.462-5.26 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
             </svg>
           </div>
           <div>
-            <div class="font-serif text-base font-medium text-ink-900 group-hover:text-emerald-700 transition">
-              Direct WhatsApp Message
+            <div class="text-sm font-semibold text-ink group-hover:text-accent transition-colors">
+              Chat with {{OWNER_NAME}} on WhatsApp
             </div>
-            <div class="text-xs text-ink-500 font-mono mt-0.5">Pre-filled project starter &bull; Fast response</div>
+            <div class="text-xs text-ink-muted mt-0.5">Fastest for quick questions</div>
           </div>
         </a>
 
-        <!-- Email Contact Box -->
-        <a 
-          href="mailto:{{EMAIL}}?subject=Inquiry:%20AI%20&%20Data%20Integration%20Project&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20project%20involving%20AI%20and%20Data%20systems%20integration%20for%20our%20team.%0D%0A%0D%0ABest%20regards,"
-          class="p-4 rounded-xl border border-paper-200 hover:border-ink-700 hover:bg-paper-100/40 transition flex items-start gap-4 group"
+        <a
+          href="mailto:{{EMAIL}}?subject=Project%20inquiry&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI%27d%20like%20to%20discuss%20a%20project%20for%20our%20business.%0D%0A%0D%0ABest,"
+          class="p-4 border border-rule hover:border-accent transition-colors flex items-start gap-3.5 group"
         >
-          <div class="w-10 h-10 rounded-lg bg-ink-900/5 text-ink-900 flex items-center justify-center shrink-0">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          <div class="w-9 h-9 bg-canvas border border-rule text-ink group-hover:text-accent flex items-center justify-center shrink-0 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </div>
-          <div>
-            <div class="font-serif text-base font-medium text-ink-900 group-hover:text-accent transition">
-              Direct Email
+          <div class="min-w-0">
+            <div class="text-sm font-semibold text-ink group-hover:text-accent transition-colors">
+              Email {{OWNER_NAME}}
             </div>
-            <div class="text-xs text-ink-500 font-mono mt-0.5">{{EMAIL}}</div>
+            <div class="font-mono text-xs text-ink-muted mt-0.5 truncate">{{EMAIL}}</div>
           </div>
         </a>
       </div>
 
-      <div class="pt-4 border-t border-paper-200 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-ink-500">
-        <div>Location / Remote: Available Globally &bull; CET / UTC+1</div>
-        <div class="flex items-center gap-4">
-          <a href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">LinkedIn Profile</a>
-          <a href="https://github.com/{{GH_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">GitHub Profile</a>
+      <div class="pt-4 border-t border-rule flex flex-wrap items-center justify-between gap-4 text-xs text-ink-muted">
+        <div>English &amp; Español</div>
+        <div class="flex items-center gap-5">
+          <a href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">LinkedIn</a>
+          <a href="https://github.com/{{GH_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">GitHub</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Site Footer -->
-  <footer class="border-t border-paper-200/80 bg-paper-100/40 py-8 px-4 sm:px-6 text-xs text-ink-500 font-mono">
-    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        &copy; 2026 {{BRAND_NAME}}. Handcrafted with static HTML &amp; Tailwind CSS.
-      </div>
-      <div class="flex items-center gap-6">
-        <a href="#top" class="hover:text-ink-900 transition">Back to top &uarr;</a>
-      </div>
+  <!-- Footer -->
+  <footer class="border-t border-rule py-6 px-5 sm:px-6 text-xs text-ink-muted">
+    <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>&copy; 2026 {{BRAND_NAME}} &middot; MX / US &amp; Spain</div>
+      <a href="#top" class="hover:text-ink transition-colors">Back to top</a>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      try {
+        var formatLocalTime = function (timeZone) {
+          return new Intl.DateTimeFormat('en-GB', {
+            timeZone: timeZone,
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          }).format(new Date());
+        };
+        var americasEl = document.getElementById('tz-americas');
+        var europeEl = document.getElementById('tz-europe');
+        if (americasEl) americasEl.textContent = 'Mexico & US (CDMX ' + formatLocalTime('America/Mexico_City') + ')';
+        if (europeEl) europeEl.textContent = 'Spain (Madrid ' + formatLocalTime('Europe/Madrid') + ')';
+      } catch (_) {}
+    })();
+  </script>
 
 </body>
 </html>
