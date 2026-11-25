@@ -1,270 +1,172 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+<!--
+   ___  ___               _   _
+  | _ \| _ \___ __ _ _ _ | |_(_)__ _ __ _ ___
+  |  _/|   (_-</ _` | ' \|  _| / _` / _` / _ \
+  |_|  |_|_/__/\__,_|_||_|\__|_\__,_\__, \___/
+                                    |___/
+  Full-stack software & AI systems
+-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{BRAND_NAME}}: Software, Data &amp; AI for Small Businesses</title>
-  <meta name="description" content="Independent software engineer with 5+ years of experience building data pipelines, internal tools, custom software, and LLM integrations for SMB founders.">
+  <title>{{BRAND_NAME}} | Full-stack software &amp; AI systems</title>
+  <meta name="description" content="Personal site of {{OWNER_NAME}} ({{BRAND_NAME}}). Projects and technical articles on full-stack software and AI systems.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{BRAND_NAME}}: Software, Data &amp; AI for Small Businesses">
-  <meta property="og:description" content="Data pipelines, internal tools, custom software, and practical LLM integrations for small and mid-sized business founders.">
+  <meta property="og:title" content="{{BRAND_NAME}} | Full-stack software &amp; AI systems">
+  <meta property="og:description" content="Projects and technical articles on full-stack software and AI systems.">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Geometric Monogram Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2316181D'/><rect x='6' y='8' width='12' height='3' fill='%23F7F7F3'/><rect x='6' y='14' width='20' height='3' fill='%23F7F7F3'/><rect x='6' y='20' width='15' height='3' fill='%231D4ED8'/></svg>">
+  <!-- Monochrome Mark Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><rect x='0.5' y='0.5' width='31' height='31' fill='none' stroke='%233A3A44'/><rect x='7' y='8' width='10' height='3' fill='%23F4F4F5'/><rect x='7' y='14.5' width='18' height='3' fill='%23F4F4F5'/><rect x='7' y='21' width='13' height='3' fill='%2371717A'/></svg>">
 </head>
 <body id="top" class="bg-canvas text-ink font-sans min-h-screen flex flex-col">
 
   <!-- Header -->
   <header class="border-b border-rule bg-canvas/95 backdrop-blur-sm sticky top-0 z-40">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3 sm:gap-4">
-      <a href="./index.html" class="flex items-center gap-2 sm:gap-2.5 text-ink hover:text-accent transition-colors shrink-0">
-        <svg class="w-5 h-5 shrink-0" viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" rx="4" fill="#16181D"/>
-          <rect x="6" y="8" width="12" height="3" fill="#F7F7F3"/>
-          <rect x="6" y="14" width="20" height="3" fill="#F7F7F3"/>
-          <rect x="6" y="20" width="15" height="3" fill="#1D4ED8"/>
+    <div class="max-w-3xl mx-auto rail-frame px-5 sm:px-8 py-4 flex items-center justify-between gap-4">
+      <a href="./index.html" class="flex items-center gap-2.5 text-ink hover:text-white transition-colors shrink-0">
+        <svg class="w-4 h-4 shrink-0" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" fill="#050505"/>
+          <rect x="0.5" y="0.5" width="31" height="31" fill="none" stroke="#3A3A44"/>
+          <rect x="7" y="8" width="10" height="3" fill="#F4F4F5"/>
+          <rect x="7" y="14.5" width="18" height="3" fill="#F4F4F5"/>
+          <rect x="7" y="21" width="13" height="3" fill="#71717A"/>
         </svg>
-        <span class="font-semibold tracking-tight text-sm sm:text-base">{{BRAND_NAME}}</span>
+        <span class="font-mono font-medium tracking-tight text-sm">{{BRAND_NAME}}</span>
       </a>
 
-      <nav class="flex items-center gap-3.5 sm:gap-7 text-xs sm:text-sm text-ink-muted whitespace-nowrap">
-        <a href="./index.html" class="text-ink font-semibold underline decoration-accent decoration-2 underline-offset-8">Home</a>
+      <nav aria-label="Primary" class="flex items-center gap-5 sm:gap-7 font-mono text-xs text-ink-muted whitespace-nowrap">
+        <a href="./index.html" aria-current="page" class="text-ink underline decoration-ink decoration-1 underline-offset-8">Home</a>
         <a href="./projects/index.html" class="hover:text-ink transition-colors">Projects</a>
-        <a href="./writing/index.html" class="hover:text-ink transition-colors">Writing</a>
-        <a href="#contact" class="px-2.5 sm:px-3 py-1 sm:py-1.5 border border-ink text-xs font-medium text-ink hover:bg-ink hover:text-surface transition-colors">
-          Contact
-        </a>
+        <a href="./articles/index.html" class="hover:text-ink transition-colors">Articles</a>
       </nav>
     </div>
   </header>
 
   <!-- Main -->
-  <main class="flex-grow max-w-3xl mx-auto px-5 sm:px-6 py-12 sm:py-20 w-full space-y-16 sm:space-y-20">
+  <main class="flex-grow max-w-3xl mx-auto rail-frame w-full">
+    <span class="hidden sm:block rail-tick -top-[6px] -left-[6px]" aria-hidden="true">+</span>
+    <span class="hidden sm:block rail-tick -top-[6px] -right-[6px]" aria-hidden="true">+</span>
 
     <!-- Hero -->
-    <section class="space-y-6">
-      <h1 class="text-3xl sm:text-5xl font-semibold tracking-tight leading-[1.12] text-ink max-w-2xl">
-        Software, data, and AI built for how your business actually works.
-      </h1>
+    <section class="px-5 sm:px-8 py-14 sm:py-20 border-b border-rule space-y-6">
+      <div class="space-y-4">
+        <h1 class="font-mono text-2xl sm:text-4xl font-medium tracking-tight leading-[1.2] text-ink max-w-2xl">
+          Building full-stack software and AI systems.
+        </h1>
 
-      <div class="space-y-3 text-base sm:text-lg text-ink-muted leading-relaxed max-w-2xl">
-        <p>
-          I am {{OWNER_NAME}}, an independent software engineer with over five years of experience helping small and mid-sized business founders replace manual spreadsheet work, connect scattered tools, and put practical AI to work.
-        </p>
-        <p class="text-sm sm:text-base">
-          You work directly with me from first scope to production. Available across Mexico, the US, and Spain in English and Spanish.
-        </p>
+        <div class="space-y-3 text-base text-ink-muted leading-relaxed max-w-[65ch]">
+          <p>
+            I'm {{OWNER_NAME}}. I have spent the last five years writing web applications, backend services, and agent tooling.
+          </p>
+          <p>
+            This site is my public workbench for shipping projects and writing down what I learn along the way.
+          </p>
+        </div>
       </div>
 
-      <div class="pt-2 flex flex-wrap items-center gap-3">
+      <div class="pt-2 flex flex-wrap items-center gap-3 font-mono text-xs">
         <a
-          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I%27d%20like%20to%20discuss%20a%20software%20or%20AI%20project%20for%20my%20business."
+          href="https://github.com/{{GH_USERNAME}}"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-4 py-2.5 bg-ink text-surface hover:bg-accent text-sm font-medium transition-colors"
-          title="Message {{OWNER_NAME}} on WhatsApp"
+          class="inline-flex items-center gap-2 px-4 py-2.5 bg-ink text-canvas hover:bg-white font-medium transition-colors"
         >
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.53-.49-5.006-1.343l-5.994 1.565 1.593-5.83c-.93-1.528-1.462-3.325-1.462-5.26 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
-          </svg>
-          <span>Message on WhatsApp</span>
-        </a>
-
-        <a
-          href="mailto:{{EMAIL}}?subject=Project%20inquiry&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI%27d%20like%20to%20discuss%20a%20project%20for%20our%20business.%0D%0A%0D%0ABest,"
-          class="inline-flex items-center gap-2 px-4 py-2.5 bg-surface border border-rule hover:border-ink text-ink text-sm font-medium transition-colors"
-          title="Email {{OWNER_NAME}}"
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-          </svg>
-          <span>Send an email</span>
+          <span>GitHub</span>
         </a>
 
         <a
           href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}"
           target="_blank"
           rel="noopener noreferrer"
-          class="px-3 py-2.5 text-sm text-ink-muted hover:text-accent underline underline-offset-4 transition-colors"
+          class="inline-flex items-center gap-2 px-4 py-2.5 bg-canvas border border-rule-strong text-ink hover:bg-surface hover:border-ink font-medium transition-colors"
         >
-          LinkedIn
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Focus -->
+    <section class="px-5 sm:px-8 py-12 sm:py-16 border-b border-rule space-y-6">
+      <h2 class="font-mono text-sm font-medium text-ink tracking-tight">Focus</h2>
+
+      <div class="border-t border-rule divide-y divide-rule">
+        <div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
+          <h3 class="md:col-span-4 font-mono text-sm text-ink">
+            Full-stack
+          </h3>
+          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
+            Web apps, APIs, databases, and the backend glue that keeps software running in production.
+          </p>
+        </div>
+
+        <div class="py-5 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
+          <h3 class="md:col-span-4 font-mono text-sm text-ink">
+            AI systems &amp; agents
+          </h3>
+          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
+            Tool-calling loops, context management, and language models wired into real codebases.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive -->
+    <section class="px-5 sm:px-8 py-12 sm:py-16 space-y-6">
+      <h2 class="font-mono text-sm font-medium text-ink tracking-tight">Archive</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 border border-rule divide-y sm:divide-y-0 sm:divide-x divide-rule">
+        <a
+          href="./projects/index.html"
+          class="p-6 bg-canvas hover:bg-surface transition-colors flex flex-col justify-between gap-6 group"
+        >
+          <div class="space-y-2">
+            <div class="font-mono text-sm font-medium text-ink group-hover:text-white">/projects</div>
+            <p class="text-sm text-ink-muted leading-relaxed">
+              Software builds, developer tools, and engineering experiments.
+            </p>
+          </div>
+          <div class="font-mono text-xs text-ink-subtle">0 published</div>
         </a>
 
         <a
-          href="https://github.com/{{GH_USERNAME}}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="px-3 py-2.5 text-sm text-ink-muted hover:text-accent underline underline-offset-4 transition-colors"
+          href="./articles/index.html"
+          class="p-6 bg-canvas hover:bg-surface transition-colors flex flex-col justify-between gap-6 group"
         >
-          GitHub
+          <div class="space-y-2">
+            <div class="font-mono text-sm font-medium text-ink group-hover:text-white">/articles</div>
+            <p class="text-sm text-ink-muted leading-relaxed">
+              Technical notes on full-stack engineering and AI systems.
+            </p>
+          </div>
+          <div class="font-mono text-xs text-ink-subtle">0 published</div>
         </a>
       </div>
     </section>
-
-    <!-- What I build (Asymmetric Spec Ledger) -->
-    <section class="space-y-6">
-      <div class="flex items-baseline justify-between border-b border-ink pb-3">
-        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-ink">What I build</h2>
-        <span class="font-mono text-xs text-ink-subtle">4 core areas</span>
-      </div>
-
-      <div class="divide-y divide-rule border-b border-rule">
-        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
-          <h3 class="md:col-span-4 text-base font-semibold text-ink">
-            Data pipelines
-          </h3>
-          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
-            Your sales, inventory, and accounting numbers probably live in separate exports. I build automated pipelines that pull them into one clean, reliable place so you stop reconciling spreadsheets by hand.
-          </p>
-        </div>
-
-        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
-          <h3 class="md:col-span-4 text-base font-semibold text-ink">
-            Internal tools
-          </h3>
-          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
-            When a growing team runs on shared sheets and email threads, things slip. I build focused admin panels, client portals, and internal trackers shaped around your exact process.
-          </p>
-        </div>
-
-        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
-          <h3 class="md:col-span-4 text-base font-semibold text-ink">
-            Custom software
-          </h3>
-          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
-            Off-the-shelf software forces you to change how you work or pay for features you never touch. I design and ship web applications built specifically for your business.
-          </p>
-        </div>
-
-        <div class="py-6 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8">
-          <h3 class="md:col-span-4 text-base font-semibold text-ink">
-            LLM &amp; agent integrations
-          </h3>
-          <p class="md:col-span-8 text-sm sm:text-base text-ink-muted leading-relaxed">
-            AI is useful when it is wired into your real data and tools. I integrate language models and automated workflows for document triage, internal search, and customer support.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- How we work & Timezones -->
-    <section class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
-      <div class="md:col-span-4 space-y-2">
-        <h2 class="text-xl font-semibold tracking-tight text-ink">Working together</h2>
-        <p class="text-sm text-ink-muted">
-          5+ years in software development. Direct engineering with no middlemen.
-        </p>
-      </div>
-
-      <div class="md:col-span-8 space-y-5">
-        <p class="text-sm sm:text-base text-ink-muted leading-relaxed">
-          You do not need to speak in technical jargon to start a project. Tell me what bottleneck is slowing your team down, and I will map out a realistic scope, timeline, and budget in plain language before writing code.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-          <div class="p-4 bg-surface border border-rule space-y-1">
-            <div class="text-xs font-medium text-ink">Americas hours</div>
-            <div class="font-mono text-xs text-ink-muted" id="tz-americas">Mexico &amp; US (CST / EST)</div>
-          </div>
-          <div class="p-4 bg-surface border border-rule space-y-1">
-            <div class="text-xs font-medium text-ink">Europe hours</div>
-            <div class="font-mono text-xs text-ink-muted" id="tz-europe">Spain (CET / CEST)</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="p-6 sm:p-8 bg-surface border border-rule space-y-6">
-      <div class="space-y-2 max-w-xl">
-        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-ink">
-          Start a conversation
-        </h2>
-        <p class="text-sm sm:text-base text-ink-muted leading-relaxed">
-          Send a quick note about what you are trying to fix or build. I reply personally, usually the same business day.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <a
-          href="https://wa.me/{{WHATSAPP_PHONE:url}}?text=Hi%20{{OWNER_NAME:url}},%20I%27d%20like%20to%20discuss%20a%20project%20for%20my%20business."
-          target="_blank"
-          rel="noopener noreferrer"
-          class="p-4 border border-rule hover:border-accent transition-colors flex items-start gap-3.5 group"
-        >
-          <div class="w-9 h-9 bg-canvas border border-rule text-ink group-hover:text-accent flex items-center justify-center shrink-0 transition-colors">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.53-.49-5.006-1.343l-5.994 1.565 1.593-5.83c-.93-1.528-1.462-3.325-1.462-5.26 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
-            </svg>
-          </div>
-          <div>
-            <div class="text-sm font-semibold text-ink group-hover:text-accent transition-colors">
-              Chat with {{OWNER_NAME}} on WhatsApp
-            </div>
-            <div class="text-xs text-ink-muted mt-0.5">Fastest for quick questions</div>
-          </div>
-        </a>
-
-        <a
-          href="mailto:{{EMAIL}}?subject=Project%20inquiry&body=Hi%20{{OWNER_NAME:url}},%0D%0A%0D%0AI%27d%20like%20to%20discuss%20a%20project%20for%20our%20business.%0D%0A%0D%0ABest,"
-          class="p-4 border border-rule hover:border-accent transition-colors flex items-start gap-3.5 group"
-        >
-          <div class="w-9 h-9 bg-canvas border border-rule text-ink group-hover:text-accent flex items-center justify-center shrink-0 transition-colors">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <div class="min-w-0">
-            <div class="text-sm font-semibold text-ink group-hover:text-accent transition-colors">
-              Email {{OWNER_NAME}}
-            </div>
-            <div class="font-mono text-xs text-ink-muted mt-0.5 truncate">{{EMAIL}}</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="pt-4 border-t border-rule flex flex-wrap items-center justify-between gap-4 text-xs text-ink-muted">
-        <div>English &amp; Español</div>
-        <div class="flex items-center gap-5">
-          <a href="https://www.linkedin.com/in/{{LINKEDIN_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">LinkedIn</a>
-          <a href="https://github.com/{{GH_USERNAME}}" target="_blank" rel="noopener noreferrer" class="hover:text-accent underline underline-offset-4">GitHub</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-rule py-6 px-5 sm:px-6 text-xs text-ink-muted">
-    <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-      <div>&copy; 2026 {{BRAND_NAME}} &middot; MX / US &amp; Spain</div>
-      <a href="#top" class="hover:text-ink transition-colors">Back to top</a>
+  <footer class="border-t border-rule font-mono text-xs text-ink-subtle">
+    <div class="max-w-3xl mx-auto rail-frame px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <span class="hidden sm:block rail-tick -top-[6px] -left-[6px]" aria-hidden="true">+</span>
+      <span class="hidden sm:block rail-tick -top-[6px] -right-[6px]" aria-hidden="true">+</span>
+
+      <div>&copy; 2026 {{BRAND_NAME}}</div>
+
+      <div class="flex flex-wrap items-center gap-5 tabular-nums">
+        <span>MX time <span id="tz-mx" class="text-ink-muted">--:--</span></span>
+        <span>DK time <span id="tz-dk" class="text-ink-muted">--:--</span></span>
+        <a href="#top" class="text-ink-muted hover:text-ink transition-colors">Top</a>
+      </div>
     </div>
   </footer>
 
-  <script>
-    (function () {
-      try {
-        var formatLocalTime = function (timeZone) {
-          return new Intl.DateTimeFormat('en-GB', {
-            timeZone: timeZone,
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: false
-          }).format(new Date());
-        };
-        var americasEl = document.getElementById('tz-americas');
-        var europeEl = document.getElementById('tz-europe');
-        if (americasEl) americasEl.textContent = 'Mexico & US (CDMX ' + formatLocalTime('America/Mexico_City') + ')';
-        if (europeEl) europeEl.textContent = 'Spain (Madrid ' + formatLocalTime('Europe/Madrid') + ')';
-      } catch (_) {}
-    })();
-  </script>
-
+  <script src="./assets/js/clocks.js" defer></script>
 </body>
 </html>

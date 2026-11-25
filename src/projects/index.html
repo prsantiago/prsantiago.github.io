@@ -1,119 +1,124 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+<!--
+   ___  ___               _   _
+  | _ \| _ \___ __ _ _ _ | |_(_)__ _ __ _ ___
+  |  _/|   (_-</ _` | ' \|  _| / _` / _` / _ \
+  |_|  |_|_/__/\__,_|_||_|\__|_\__,_\__, \___/
+                                    |___/
+  Full-stack software & AI systems
+-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | {{BRAND_NAME}}</title>
-  <meta name="description" content="Selected software, data pipeline, and AI integration work by {{BRAND_NAME}}.">
+  <meta name="description" content="Software builds, developer tools, and AI engineering projects by {{BRAND_NAME}}.">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../assets/css/style.css">
 
-  <!-- Geometric Monogram Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2316181D'/><rect x='6' y='8' width='12' height='3' fill='%23F7F7F3'/><rect x='6' y='14' width='20' height='3' fill='%23F7F7F3'/><rect x='6' y='20' width='15' height='3' fill='%231D4ED8'/></svg>">
+  <!-- Monochrome Mark Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><rect x='0.5' y='0.5' width='31' height='31' fill='none' stroke='%233A3A44'/><rect x='7' y='8' width='10' height='3' fill='%23F4F4F5'/><rect x='7' y='14.5' width='18' height='3' fill='%23F4F4F5'/><rect x='7' y='21' width='13' height='3' fill='%2371717A'/></svg>">
 </head>
 <body id="top" class="bg-canvas text-ink font-sans min-h-screen flex flex-col">
 
   <!-- Header -->
   <header class="border-b border-rule bg-canvas/95 backdrop-blur-sm sticky top-0 z-40">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3 sm:gap-4">
-      <a href="../index.html" class="flex items-center gap-2 sm:gap-2.5 text-ink hover:text-accent transition-colors shrink-0">
-        <svg class="w-5 h-5 shrink-0" viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" rx="4" fill="#16181D"/>
-          <rect x="6" y="8" width="12" height="3" fill="#F7F7F3"/>
-          <rect x="6" y="14" width="20" height="3" fill="#F7F7F3"/>
-          <rect x="6" y="20" width="15" height="3" fill="#1D4ED8"/>
+    <div class="max-w-3xl mx-auto rail-frame px-5 sm:px-8 py-4 flex items-center justify-between gap-4">
+      <a href="../index.html" class="flex items-center gap-2.5 text-ink hover:text-white transition-colors shrink-0">
+        <svg class="w-4 h-4 shrink-0" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" fill="#050505"/>
+          <rect x="0.5" y="0.5" width="31" height="31" fill="none" stroke="#3A3A44"/>
+          <rect x="7" y="8" width="10" height="3" fill="#F4F4F5"/>
+          <rect x="7" y="14.5" width="18" height="3" fill="#F4F4F5"/>
+          <rect x="7" y="21" width="13" height="3" fill="#71717A"/>
         </svg>
-        <span class="font-semibold tracking-tight text-sm sm:text-base">{{BRAND_NAME}}</span>
+        <span class="font-mono font-medium tracking-tight text-sm">{{BRAND_NAME}}</span>
       </a>
 
-      <nav class="flex items-center gap-3.5 sm:gap-7 text-xs sm:text-sm text-ink-muted whitespace-nowrap">
+      <nav aria-label="Primary" class="flex items-center gap-5 sm:gap-7 font-mono text-xs text-ink-muted whitespace-nowrap">
         <a href="../index.html" class="hover:text-ink transition-colors">Home</a>
-        <a href="../projects/index.html" class="text-ink font-semibold underline decoration-accent decoration-2 underline-offset-8">Projects</a>
-        <a href="../writing/index.html" class="hover:text-ink transition-colors">Writing</a>
-        <a href="../index.html#contact" class="px-2.5 sm:px-3 py-1 sm:py-1.5 border border-ink text-xs font-medium text-ink hover:bg-ink hover:text-surface transition-colors">
-          Contact
-        </a>
+        <a href="../projects/index.html" aria-current="page" class="text-ink underline decoration-ink decoration-1 underline-offset-8">Projects</a>
+        <a href="../articles/index.html" class="hover:text-ink transition-colors">Articles</a>
       </nav>
     </div>
   </header>
 
   <!-- Main -->
-  <main class="flex-grow max-w-3xl mx-auto px-5 sm:px-6 py-12 sm:py-20 w-full space-y-12">
+  <main class="flex-grow max-w-3xl mx-auto rail-frame w-full">
+    <span class="hidden sm:block rail-tick -top-[6px] -left-[6px]" aria-hidden="true">+</span>
+    <span class="hidden sm:block rail-tick -top-[6px] -right-[6px]" aria-hidden="true">+</span>
 
-    <section class="space-y-4 border-b border-rule pb-8">
-      <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight text-ink">
+    <section class="px-5 sm:px-8 py-12 sm:py-16 border-b border-rule space-y-3">
+      <div class="font-mono text-xs text-ink-subtle">/projects</div>
+      <h1 class="font-mono text-2xl sm:text-3xl font-medium tracking-tight text-ink">
         Projects
       </h1>
-      <p class="text-base text-ink-muted leading-relaxed max-w-2xl">
-        Public write-ups of client systems and open-source tools will live here.
+      <p class="text-base text-ink-muted leading-relaxed max-w-[65ch]">
+        Software builds, developer tools, and engineering experiments.
       </p>
     </section>
 
-    <section class="p-6 sm:p-8 bg-surface border border-rule space-y-5">
-      <h2 class="text-lg font-semibold text-ink">Case studies are being documented</h2>
-      <p class="text-sm sm:text-base text-ink-muted leading-relaxed max-w-xl">
-        Most of my recent work is private software built for small and mid-sized businesses. You can browse public code on GitHub, or message me directly if you want to see examples relevant to your industry.
-      </p>
-      <div class="flex flex-wrap items-center gap-3 pt-1">
-        <a
-          href="https://github.com/{{GH_USERNAME}}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="px-4 py-2 bg-ink text-surface hover:bg-accent text-sm font-medium transition-colors"
-        >
-          Browse GitHub
-        </a>
-        <a
-          href="../index.html#contact"
-          class="px-4 py-2 border border-rule hover:border-ink text-ink text-sm font-medium transition-colors"
-        >
-          Ask for work samples
-        </a>
+    <section class="px-5 sm:px-8 py-12 sm:py-16">
+      <div class="p-6 sm:p-8 bg-surface border border-rule space-y-5">
+        <h2 class="font-mono text-sm font-medium text-ink">Nothing published here yet</h2>
+        <p class="text-sm sm:text-base text-ink-muted leading-relaxed max-w-[60ch]">
+          Write-ups for recent projects are still in drafts. Public repositories live on GitHub in the meantime.
+        </p>
+        <div class="pt-1 flex flex-wrap items-center gap-3 font-mono text-xs">
+          <a
+            href="https://github.com/{{GH_USERNAME}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-4 py-2.5 bg-ink text-canvas hover:bg-white font-medium transition-colors"
+          >
+            Browse GitHub
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- TEMPLATE: Project Entry (uncomment and duplicate inside a <div class="divide-y divide-rule border-b border-rule"> when adding real projects)
-    <article id="project-slug" class="py-8 space-y-5">
+    <!-- TEMPLATE: Project Entry (uncomment and duplicate inside a <div class="divide-y divide-rule border-t border-rule"> when adding real projects)
+    <article id="project-slug" class="px-5 sm:px-8 py-8 space-y-4">
       <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
-        <h2 class="text-xl sm:text-2xl font-semibold text-ink">Project title</h2>
+        <h2 class="font-mono text-lg sm:text-xl font-medium text-ink">Project title</h2>
         <span class="font-mono text-xs text-ink-subtle shrink-0">2026</span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-        <div class="space-y-1.5">
-          <h3 class="font-semibold text-ink">Problem</h3>
-          <p class="text-ink-muted leading-relaxed">What bottleneck or manual process the business had.</p>
-        </div>
-        <div class="space-y-1.5">
-          <h3 class="font-semibold text-ink">What was built</h3>
-          <p class="text-ink-muted leading-relaxed">Plain description of the pipeline, internal tool, or integration.</p>
-        </div>
-        <div class="space-y-1.5">
-          <h3 class="font-semibold text-ink">Outcome</h3>
-          <p class="text-ink-muted leading-relaxed">Concrete result for the team.</p>
-        </div>
-      </div>
+      <p class="text-sm sm:text-base text-ink-muted leading-relaxed max-w-[65ch]">
+        Concise description of what the project does, why it exists, and any interesting technical trade-offs.
+      </p>
 
-      <div class="flex flex-wrap items-center justify-between gap-4 pt-2 text-xs">
-        <div class="flex flex-wrap gap-2 font-mono text-ink-muted">
-          <span class="px-2 py-0.5 bg-canvas border border-rule">Stack 1</span>
-          <span class="px-2 py-0.5 bg-canvas border border-rule">Stack 2</span>
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-1 font-mono text-xs">
+        <div class="flex flex-wrap gap-2 text-ink-muted">
+          <span class="px-2 py-0.5 bg-surface border border-rule">TypeScript</span>
+          <span class="px-2 py-0.5 bg-surface border border-rule">Python</span>
         </div>
-        <a href="../index.html#contact" class="text-accent hover:underline font-medium">Ask about similar work</a>
+        <div class="flex items-center gap-4 text-ink">
+          <a href="https://github.com/{{GH_USERNAME}}/repo" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:text-white">Source</a>
+          <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 hover:text-white">Live</a>
+        </div>
       </div>
     </article>
     -->
-
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-rule py-6 px-5 sm:px-6 text-xs text-ink-muted">
-    <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-      <div>&copy; 2026 {{BRAND_NAME}} &middot; MX / US &amp; Spain</div>
-      <a href="#top" class="hover:text-ink transition-colors">Back to top</a>
+  <footer class="border-t border-rule font-mono text-xs text-ink-subtle">
+    <div class="max-w-3xl mx-auto rail-frame px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <span class="hidden sm:block rail-tick -top-[6px] -left-[6px]" aria-hidden="true">+</span>
+      <span class="hidden sm:block rail-tick -top-[6px] -right-[6px]" aria-hidden="true">+</span>
+
+      <div>&copy; 2026 {{BRAND_NAME}}</div>
+
+      <div class="flex flex-wrap items-center gap-5 tabular-nums">
+        <span>MX time <span id="tz-mx" class="text-ink-muted">--:--</span></span>
+        <span>DK time <span id="tz-dk" class="text-ink-muted">--:--</span></span>
+        <a href="#top" class="text-ink-muted hover:text-ink transition-colors">Top</a>
+      </div>
     </div>
   </footer>
 
+  <script src="../assets/js/clocks.js" defer></script>
 </body>
 </html>

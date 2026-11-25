@@ -38,8 +38,6 @@ jobs:
         env:
           OWNER_NAME: ${{ vars.OWNER_NAME }}
           BRAND_NAME: ${{ vars.BRAND_NAME }}
-          EMAIL: ${{ vars.EMAIL }}
-          WHATSAPP_PHONE: ${{ vars.WHATSAPP_PHONE }}
           LINKEDIN_USERNAME: ${{ vars.LINKEDIN_USERNAME }}
           GH_USERNAME: ${{ vars.GH_USERNAME }}
         run: npm run build
