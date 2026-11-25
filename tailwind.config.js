@@ -6,22 +6,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        canvas: '#F7F7F3',
-        surface: '#FFFFFF',
+        canvas: '#050505',
+        surface: '#0E0E10',
         ink: {
-          DEFAULT: '#16181D',
-          muted: '#555B66',
-          subtle: '#767D8A',
+          DEFAULT: '#F4F4F5',
+          muted: '#A1A1AA',
+          subtle: '#6E6E77',
         },
-        rule: '#DCDED8',
-        accent: {
-          DEFAULT: '#1D4ED8',
-          hover: '#1E40AF',
+        rule: {
+          DEFAULT: '#222226',
+          strong: '#3A3A44',
         },
       },
       fontFamily: {
         sans: ['"Instrument Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['"IBM Plex Mono"', 'Menlo', 'Monaco', 'monospace'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
     },
   },

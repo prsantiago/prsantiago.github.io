@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,19 +7,46 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: dark;
     @apply bg-canvas text-ink;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   ::selection {
-    background-color: #DBEAFE;
-    color: #16181D;
+    background-color: theme('colors.ink.DEFAULT');
+    color: theme('colors.canvas');
   }
 
   a:focus-visible,
   button:focus-visible {
-    outline: 2px solid #1D4ED8;
+    outline: 1px solid theme('colors.ink.DEFAULT');
     outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .rail-frame {
+    position: relative;
+  }
+
+  @media (min-width: 640px) {
+    .rail-frame {
+      border-left: 1px solid theme('colors.rule.DEFAULT');
+      border-right: 1px solid theme('colors.rule.DEFAULT');
+    }
+
+    .rail-tick {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      font-family: theme('fontFamily.mono');
+      font-size: 11px;
+      line-height: 11px;
+      text-align: center;
+      color: theme('colors.ink.subtle');
+      user-select: none;
+      pointer-events: none;
+    }
   }
 }
