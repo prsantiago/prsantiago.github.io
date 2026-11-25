@@ -1,6 +1,6 @@
 # PRsantiago Personal Brand
 
-Developer-first personal brand website and public archive for Santiago—publishing technical writing, software projects, and engineering history to establish a voice in the dev industry.
+Developer-first personal brand website and public archive for Santiago, publishing technical writing, software projects, and engineering history to establish a voice in the dev industry.
 
 ## Language
 

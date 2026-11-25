@@ -14,13 +14,13 @@
   }
 
   ::selection {
-    background-color: #F4F4F5;
-    color: #050505;
+    background-color: theme('colors.ink.DEFAULT');
+    color: theme('colors.canvas');
   }
 
   a:focus-visible,
   button:focus-visible {
-    outline: 1px solid #F4F4F5;
+    outline: 1px solid theme('colors.ink.DEFAULT');
     outline-offset: 2px;
   }
 }
@@ -32,19 +32,19 @@
 
   @media (min-width: 640px) {
     .rail-frame {
-      border-left: 1px solid #222226;
-      border-right: 1px solid #222226;
+      border-left: 1px solid theme('colors.rule.DEFAULT');
+      border-right: 1px solid theme('colors.rule.DEFAULT');
     }
 
     .rail-tick {
       position: absolute;
       width: 11px;
       height: 11px;
-      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-family: theme('fontFamily.mono');
       font-size: 11px;
       line-height: 11px;
       text-align: center;
-      color: #52525B;
+      color: theme('colors.ink.subtle');
       user-select: none;
       pointer-events: none;
     }
